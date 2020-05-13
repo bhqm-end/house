@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/services/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/services/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/comment-srv/comment-srv.iml" filepath="$PROJECT_DIR$/services/comment-srv/comment-srv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor/eureka-sever/eureka-sever.iml" filepath="$PROJECT_DIR$/monitor/eureka-sever/eureka-sever.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/house-srv/house-srv.iml" filepath="$PROJECT_DIR$/services/house-srv/house-srv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/houseV2.0.iml" filepath="$PROJECT_DIR$/.idea/houseV2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor/hystrixdashboard/hystrixdashboard.iml" filepath="$PROJECT_DIR$/monitor/hystrixdashboard/hystrixdashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/user-service/user-srv.iml" filepath="$PROJECT_DIR$/services/user-service/user-srv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor/zipkinUi/zipkinUi.iml" filepath="$PROJECT_DIR$/monitor/zipkinUi/zipkinUi.iml" />
+    </modules>
+  </component>
+</project>

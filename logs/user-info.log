@@ -1,0 +1,4 @@
+2020-02-16 17:00:49.588 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,] - Resolving eureka endpoints via configuration
+2020-02-16 17:05:49.589 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,] - Resolving eureka endpoints via configuration
+2020-02-16 17:10:49.591 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,] - Resolving eureka endpoints via configuration
+2020-02-16 17:15:49.592 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,] - Resolving eureka endpoints via configuration

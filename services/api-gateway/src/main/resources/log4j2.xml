@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="debug">
+       <appenders>
+        <!--这个输出控制台的配置-->
+        <Console name="STDOUT" >
+             <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY" />
+            <!-- 输出日志的格式-->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%logger{50}:%L] [%X{X-B3-TraceId},%X{X-B3-SpanId}] - %msg%n" charset="UTF-8"/>
+        </Console>
+
+        <RollingRandomAccessFile name="FILE-INFO" fileName="logs/api-info.log">
+             <!--文件在滚动的时候被定义为什么名字-->
+            filePattern="logs/house-info.%d{yyyy-MM-dd-HH}.log">
+            <!--只接受info和info以上的级别的-->
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY" />
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%logger{50}:%L] [%X{X-B3-TraceId},%X{X-B3-SpanId}] - %msg%n" charset="UTF-8" />
+            <!--什么时候触发滚动，因为上面我们定义filePattern="logs/house-info.%d{yyyy-MM-dd-HH}.log">以小时为单位的
+            所以这里的interval="1"意味着每小时生成一个日志文件-->
+            <TimeBasedTriggeringPolicy  interval="1" />
+            <!--定义一个默认的策略，在滚动的时候保持多少个文件-->
+            <DefaultRolloverStrategy max="1"  >
+               <Delete basePath="logs" maxDepth="2">
+                   <!--要删除的文件名称-->
+                   <IfFileName glob="*house-info.*.log" />
+                   <!--只保留一个小时的时间-->
+                   <IfLastModified age="1h" />
+               </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+
+
+        <RollingRandomAccessFile name="FILE-DEBUG" fileName="logs/api-debug.log"
+            filePattern="logs/house-debug.%d{yyyy-MM-dd-HH}.log">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY" />
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}  [%t] %-5level [%logger{50}:%L] [%X{X-B3-TraceId},%X{X-B3-SpanId},%X{X-B3-ParentSpanId}] - %msg%n" charset="UTF-8" />
+            <TimeBasedTriggeringPolicy  interval="1" />
+            <DefaultRolloverStrategy max="1"  >
+               <Delete basePath="logs" maxDepth="2">
+                    <IfFileName glob="*house-debug.*.log" />
+                    <IfLastModified age="1h" />
+               </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="FILE-WARN" fileName="logs/api-warn.log"
+            filePattern="logs/house-warn.%d{yyyy-MM-dd-HH}.log">
+            <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY" />
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%logger{50}:%L] [%X{X-B3-TraceId},%X{X-B3-SpanId}] - %msg%n" charset="UTF-8" />
+            <TimeBasedTriggeringPolicy  interval="1" />
+             <DefaultRolloverStrategy max="1"  >
+               <Delete basePath="logs" maxDepth="2">
+                    <IfFileName glob="*house-warn.*.log" />
+                    <IfLastModified age="1h" />
+               </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="FILE-ERROR" fileName="logs/api-error.log"
+            filePattern="logs/house-error.%d{yyyy-MM-dd-HH}.log">
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY" />
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%logger{50}:%L] [%X{X-B3-TraceId},%X{X-B3-SpanId}] - %msg%n" charset="UTF-8" />
+            <TimeBasedTriggeringPolicy  interval="1" />
+            <DefaultRolloverStrategy max="1"  >
+               <Delete basePath="logs" maxDepth="2">
+                    <IfFileName glob="*house-error.*.log" />
+                    <IfLastModified age="1h" />
+               </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+    </appenders>
+
+    <loggers>
+	    <AsyncLogger name="springfox" level="OFF"></AsyncLogger>
+
+        <AsyncRoot level="INFO" includeLocation="true" >
+            <AppenderRef ref="FILE-INFO" />
+            <AppenderRef ref="FILE-WARN" />
+            <AppenderRef ref="FILE-ERROR" />
+            <AppenderRef ref="STDOUT" />
+        </AsyncRoot>
+    </loggers>
+</configuration>

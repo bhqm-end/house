@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="comment-srv" />
+        <module name="user-srv" />
+        <module name="eureka-sever" />
+        <module name="api-gateway" />
+        <module name="hystrixdashboard" />
+        <module name="zipkinUi" />
+        <module name="house-srv" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
+      <module name="comment-srv" target="1.8" />
+      <module name="eureka-sever" target="1.8" />
+      <module name="house-srv" target="1.8" />
+      <module name="hystrixdashboard" target="1.8" />
+      <module name="user-srv" target="1.8" />
+      <module name="zipkinUi" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

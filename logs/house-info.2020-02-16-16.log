@@ -1,0 +1,163 @@
+2020-02-16 16:01:23.054 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:06:23.056 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:11:23.061 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:16:23.064 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:20:00.930 [http-nio-8085-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179] [,,] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-02-16 16:20:00.932 [http-nio-8085-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:489] [,,] - FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-16 16:20:01.214 [http-nio-8085-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:508] [,,] - FrameworkServlet 'dispatcherServlet': initialization completed in 280 ms
+2020-02-16 16:20:01.405 [http-nio-8085-exec-1] INFO  [org.zalando.logbook.Logbook:74] [c744edea24fb40a8,0ea08a734fb1eec6,c744edea24fb40a8] - Incoming Request: 7aebebec-3a95-40e9-9449-a945c3b78b1d
+POST http://LAPTOP-JSBN7TSG:8085/comment/list HTTP/1.1
+x-b3-parentspanid: c744edea24fb40a8
+content-length: 31
+x-span-name: http:/comment/list
+x-b3-traceid: c744edea24fb40a8
+x-b3-spanid: 0ea08a734fb1eec6
+x-b3-sampled: 1
+host: LAPTOP-JSBN7TSG:8085
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"houseId":3,"size":8,"type":1}
+2020-02-16 16:20:01.872 [http-nio-8085-exec-1] INFO  [org.zalando.logbook.Logbook:79] [c744edea24fb40a8,0ea08a734fb1eec6,c744edea24fb40a8] - Outgoing Response: 7aebebec-3a95-40e9-9449-a945c3b78b1d
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+X-Application-Context: comment:8085
+Date: Sun, 16 Feb 2020 08:20:01 GMT
+Content-Type: application/json;charset=UTF-8
+
+{"code":0,"msg":"OK","result":[]}
+2020-02-16 16:21:23.067 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:22:30.330 [http-nio-8085-exec-3] INFO  [org.zalando.logbook.Logbook:74] [50e39b651780aba6,35307acc925db146,50e39b651780aba6] - Incoming Request: 88ff5d5f-5346-49c2-9700-e0aa58ecc9b9
+POST http://LAPTOP-JSBN7TSG:8085/comment/list HTTP/1.1
+x-b3-parentspanid: 50e39b651780aba6
+content-length: 31
+x-span-name: http:/comment/list
+x-b3-traceid: 50e39b651780aba6
+x-b3-spanid: 35307acc925db146
+x-b3-sampled: 1
+host: LAPTOP-JSBN7TSG:8085
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"houseId":2,"size":8,"type":1}
+2020-02-16 16:22:30.340 [http-nio-8085-exec-3] INFO  [org.zalando.logbook.Logbook:79] [50e39b651780aba6,35307acc925db146,50e39b651780aba6] - Outgoing Response: 88ff5d5f-5346-49c2-9700-e0aa58ecc9b9
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+X-Application-Context: comment:8085
+Date: Sun, 16 Feb 2020 08:22:30 GMT
+Content-Type: application/json;charset=UTF-8
+
+{"code":0,"msg":"OK","result":[]}
+2020-02-16 16:24:01.074 [http-nio-8085-exec-5] INFO  [org.zalando.logbook.Logbook:74] [169797e2878a22b7,42f41672c0d6ac56,169797e2878a22b7] - Incoming Request: d61e7c87-41ea-4cc9-a2ce-f1f50d75948e
+POST http://LAPTOP-JSBN7TSG:8085/comment/list HTTP/1.1
+x-b3-parentspanid: 169797e2878a22b7
+content-length: 31
+x-span-name: http:/comment/list
+x-b3-traceid: 169797e2878a22b7
+x-b3-spanid: 42f41672c0d6ac56
+x-b3-sampled: 1
+host: LAPTOP-JSBN7TSG:8085
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"houseId":3,"size":8,"type":1}
+2020-02-16 16:24:01.107 [http-nio-8085-exec-5] INFO  [org.zalando.logbook.Logbook:79] [169797e2878a22b7,42f41672c0d6ac56,169797e2878a22b7] - Outgoing Response: d61e7c87-41ea-4cc9-a2ce-f1f50d75948e
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+X-Application-Context: comment:8085
+Date: Sun, 16 Feb 2020 08:24:01 GMT
+Content-Type: application/json;charset=UTF-8
+
+{"code":0,"msg":"OK","result":[]}
+2020-02-16 16:26:23.069 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:26:28.253 [http-nio-8085-exec-7] INFO  [org.zalando.logbook.Logbook:74] [c4f674c165e36a54,7596106bc78a3e3e,c4f674c165e36a54] - Incoming Request: 76dec944-2e46-4cdd-a715-16442c8c3648
+POST http://LAPTOP-JSBN7TSG:8085/comment/add HTTP/1.1
+x-b3-parentspanid: c4f674c165e36a54
+content-length: 49
+x-span-name: http:/comment/add
+x-b3-traceid: c4f674c165e36a54
+x-b3-spanid: 7596106bc78a3e3e
+x-b3-sampled: 1
+host: LAPTOP-JSBN7TSG:8085
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"content":"好","houseId":3,"type":1,"userId":3}
+2020-02-16 16:26:28.385 [http-nio-8085-exec-7] INFO  [org.zalando.logbook.Logbook:79] [c4f674c165e36a54,7596106bc78a3e3e,c4f674c165e36a54] - Outgoing Response: 76dec944-2e46-4cdd-a715-16442c8c3648
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+X-Application-Context: comment:8085
+Date: Sun, 16 Feb 2020 08:26:28 GMT
+Content-Type: application/json;charset=UTF-8
+
+{"code":0,"msg":"OK"}
+2020-02-16 16:26:30.637 [http-nio-8085-exec-8] INFO  [org.zalando.logbook.Logbook:74] [1fc92235b045ebfa,03f815f94507aef8,1fc92235b045ebfa] - Incoming Request: 9c5e29a6-4b59-46f9-859b-ccf67e5730cc
+POST http://LAPTOP-JSBN7TSG:8085/comment/list HTTP/1.1
+x-b3-parentspanid: 1fc92235b045ebfa
+content-length: 31
+x-span-name: http:/comment/list
+x-b3-traceid: 1fc92235b045ebfa
+x-b3-spanid: 03f815f94507aef8
+x-b3-sampled: 1
+host: LAPTOP-JSBN7TSG:8085
+content-type: application/json;charset=UTF-8
+connection: Keep-Alive
+accept-encoding: gzip,deflate
+user-agent: agent
+accept: application/json, application/json, application/*+json, application/*+json
+
+{"houseId":3,"size":8,"type":1}
+2020-02-16 16:26:30.737 [http-nio-8085-exec-8] INFO  [org.springframework.context.annotation.AnnotationConfigApplicationContext:583] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5d557ca6: startup date [Sun Feb 16 16:26:30 GMT+08:00 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@411341bd
+2020-02-16 16:26:30.871 [http-nio-8085-exec-8] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:155] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-02-16 16:26:31.212 [http-nio-8085-exec-8] INFO  [com.netflix.config.ChainedDynamicProperty:115] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - Flipping property: user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-02-16 16:26:31.269 [http-nio-8085-exec-8] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer:58] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - Shutdown hook installed for: NFLoadBalancer-PingTimer-user
+2020-02-16 16:26:31.331 [http-nio-8085-exec-8] INFO  [com.netflix.loadbalancer.BaseLoadBalancer:185] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - Client:user instantiated a LoadBalancer:DynamicServerListLoadBalancer:{NFLoadBalancer:name=user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-02-16 16:26:31.342 [http-nio-8085-exec-8] INFO  [com.netflix.loadbalancer.DynamicServerListLoadBalancer:214] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - Using serverListUpdater PollingServerListUpdater
+2020-02-16 16:26:31.394 [http-nio-8085-exec-8] INFO  [com.netflix.config.ChainedDynamicProperty:115] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - Flipping property: user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-02-16 16:26:31.397 [http-nio-8085-exec-8] INFO  [com.netflix.loadbalancer.DynamicServerListLoadBalancer:150] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - DynamicServerListLoadBalancer for client user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user,current list of Servers=[LAPTOP-JSBN7TSG:8083],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:LAPTOP-JSBN7TSG:8083;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 GMT+08:00 1970;	First connection made: Thu Jan 01 08:00:00 GMT+08:00 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@32469950
+2020-02-16 16:26:31.568 [http-nio-8085-exec-8] INFO  [org.zalando.logbook.Logbook:74] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - Outgoing Request: ba2726e3-6744-4e01-9225-d9a863137f74
+GET http://LAPTOP-JSBN7TSG:8083/user/getById?id=3 HTTP/1.1
+X-Span-Name: http:/user/getById
+Accept: application/json, application/json, application/*+json, application/*+json
+X-B3-SpanId: b08acde1c0a8255d
+X-B3-ParentSpanId: 03f815f94507aef8
+X-B3-Sampled: 1
+X-B3-TraceId: 1fc92235b045ebfa
+2020-02-16 16:26:32.022 [http-nio-8085-exec-8] INFO  [org.zalando.logbook.Logbook:79] [1fc92235b045ebfa,b08acde1c0a8255d,03f815f94507aef8] - Incoming Response: ba2726e3-6744-4e01-9225-d9a863137f74
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+X-Application-Context: user:8083
+Date: Sun, 16 Feb 2020 08:26:31 GMT
+Content-Type: application/json;charset=UTF-8
+
+{"code":0,"msg":"ok","result":{"id":3,"name":"test","phone":"15692316583","email":"1165589811@qq.com","aboutme":"","passwd":"9774f20408063cc19ac79e8afff1b59e","confirmPasswd":null,"type":1,"createTime":1581756405000,"enable":1,"avatar":"http://127.0.0.1:8081/images/1581756405/cs.jpg","avatarFile":null,"newPassword":null,"key":null,"agencyId":0,"token":null,"enableUrl":null,"agencyName":null}}
+2020-02-16 16:26:32.348 [PollingServerListUpdater-0] INFO  [com.netflix.config.ChainedDynamicProperty:115] [,,] - Flipping property: user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-02-16 16:26:32.400 [http-nio-8085-exec-8] INFO  [com.mooc.house.comment.common.Rests:79] [1fc92235b045ebfa,03f815f94507aef8,1fc92235b045ebfa] - Rest executed with params={userId=3} and result=RestResponse [code=0, msg=ok, result=com.mooc.house.comment.model.User@7db31cb6]
+2020-02-16 16:26:32.432 [http-nio-8085-exec-8] INFO  [org.zalando.logbook.Logbook:79] [1fc92235b045ebfa,03f815f94507aef8,1fc92235b045ebfa] - Outgoing Response: 9c5e29a6-4b59-46f9-859b-ccf67e5730cc
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+X-Application-Context: comment:8085
+Date: Sun, 16 Feb 2020 08:26:32 GMT
+Content-Type: application/json;charset=UTF-8
+
+{"code":0,"msg":"OK","result":[{"id":2,"content":"好","houseId":3,"createTime":1581841588000,"blogId":0,"type":1,"userId":3,"userName":"test","avatar":"http://127.0.0.1:8081/images/1581756405/cs.jpg"}]}
+2020-02-16 16:31:23.070 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:36:23.074 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:41:23.077 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:46:23.080 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:51:23.084 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
+2020-02-16 16:56:23.087 [AsyncResolver-bootstrap-executor-0] INFO  [com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver:43] [,,] - Resolving eureka endpoints via configuration
